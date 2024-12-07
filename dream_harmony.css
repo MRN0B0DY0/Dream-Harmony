@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/*cover page code*/
+.cover-page {
+    height: 100vh;
+    width: 100vw;
+    ;
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    font-family: Cursive;
+}
+
+.cover-page-button {
+    text-align: center;
+    height: 75px;
+    width: 200px;
+}
+
+/*home page code*/
+.forward-back-button {
+    margin-right: 600px;
+
+}
+
+#carouselExampleIndicators {
+    text-align: center;
+}
+
+.left-side-panal {
+    background-color: black;
+}
+
+.right-side-panal {
+    padding: 20px;
+    background-color: #212121;
+    border-color: red;
+    border-width: 2px;
+    height: 300vh;
+    width: 200vw;
+}
+
+.home-image {
+    height: 220px;
+    width: 220px;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.home-card {
+    background-color: #424242;
+    margin: 20px;
+    width: 220px;
+    border-radius: 20px;
+}
+
+.home-subcard-heading {
+    color: #ffffff;
+    padding: 10px;
+    font-family: "bree Serif";
+}
+
+.home-subcard-paragraph {
+    color: #ffffff;
+    padding: 10px;
+    font-family: "bree Serif";
+}
+
+.home-page-section-heading {
+    color: #ffffff;
+    font-family: "bree Serif";
+    font-size: 30px;
+}
+
+.home-button {
+    background-color: #40E220;
+    color: #ffffff;
+    width: 15vw;
+    height: 4vh;
+    border: 0px;
+    border-radius: 20px;
+}
+
+
+/*Detail page code */
+
+
+.detail-podcast-top-card {
+    background-color: #122b19;
+    padding: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.detail-top-subcard {
+    padding-left: 10px;
+}
+
+.detail-Puri-Jagannadh-Page-image {
+    height: 130px;
+    width: 145px;
+    border-radius: 100%;
+}
+
+.detail-podcast-speaker-name-heading {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.detail-podcast-speaker-name-paragraph {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: "Roboto";
+}
+
+.detail-podcast-episodes-name {
+    font-size: 19px;
+    color: #122b19;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.detail-podcast-episodes-detail {
+    font-size: 16px;
+    color: #5a7184;
+    font-family: "Roboto";
+}
+
+.detail-podcast-episodes-time {
+    font-size: 13px;
+    color: #5a7184;
+    padding-top: 10px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.detail-page-episodes-list {
+    padding: 10px;
+}
+
+.detail-page-episodes-sublist {
+    padding-left: 10px;
+}
+
+.back-button {
+    background-color: #151765;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 90px;
+    margin: 10px;
+    font-family: "Roboto";
+}
