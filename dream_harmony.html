@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="dream_harmony.css">
+    <link rel="stylesheet" href="Exp--1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectioncoverpage">
+        <div class="cover-page d-flex flex-column justify-content-center">
+            <h1>Welcome to</h1>
+            <h1>Dream Harmony</h1>
+            <p>Take your time listening to the music you love</p>
+            <div class="d-center">
+                <button class="btn btn-light" onclick="display('sectionhome')">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionhome">
+        <div class="d-flex flex-row justify-content-start left-side-panal">
+            <div class="right-side-panal">
+                <div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <img onclick="display('sectionArjitSingh')" src="https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249" class="d-block w-50 h-50" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img onclick="display('sectionAtifAslam')" src="https://c.saavncdn.com/artists/Atif_Aslam_500x500.jpg" class="d-block w-50 h-50" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img onclick="display('sectionKollywoodCream')" src="https://i.scdn.co/image/ab67706f00000002c66d367db59ad3918887e38f" class="d-block w-50 h-50" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h1 class="home-page-section-heading">India's Best</h1>
+                        <div class="d-flex flex-row justify-content-start">
+                            <div class="home-card" onclick="display('sectionLataMangeshkar')">
+                                <img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/4afa02e54a259d5187b453e57d330788" class="home-image" />
+                                <h5 class="home-subcard-heading">Lata Mangeshkar for...</h5>
+                                <p class="home-subcard-paragraph">Celebrate the leagend Lata Mangeshkar with her.....</p>
+                            </div>
+                            <div class="home-card" onclick="display('sectionBollywoodButter')">
+                                <img src="https://i.scdn.co/image/ab67706f00000003fbeeccdab429f7c9632d7bcf" class="home-image" />
+                                <h5 class="home-subcard-heading">Bollywood Butter</h5>
+                                <p class="home-subcard-paragraph">The finiest quality of bollywood music....</p>
+                            </div>
+                            <div class="home-card" onclick="display('sectionPunjabi101')">
+                                <img src="https://i.scdn.co/image/ab67706f000000030226a9588a644f2d5afae525" class="home-image" />
+                                <h5 class="home-subcard-heading">Punjabi 101</h5>
+                                <p class="home-subcard-paragraph">Ultimate 101 punjabi hits with AP Dhillon</p>
+                            </div>
+                            <div class="home-card" onclick="display('sectionKollywoodCream')">
+                                <img src="https://i.scdn.co/image/ab67706f00000002c66d367db59ad3918887e38f" class="home-image" />
+                                <h5 class="home-subcard-heading">Kollywood Cream</h5>
+                                <p class="home-subcard-paragraph">Finest collection of Tamil Misic from the past 5....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="home-page-section-heading">Popular albums</h1>
+                    <div class="d-flex flex-row justify-content-start">
+                        <div class="home-card" onclick="display('sectionNoLove')">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273955bb3adff01850fc1eb6a61" class="home-image" />
+                            <h5 class="home-subcard-heading">No Love</h5>
+                            <p class="home-subcard-paragraph">Shubh</p>
+                        </div>
+                        <div class="home-card" onclick="display('sectionKesariya')">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/9f/13/ca/9f13ca3b-e533-03e0-f19a-f0aaa774581d/196589311191.jpg/1200x1200bf-60.jpg" class="home-image" />
+                            <h5 class="home-subcard-heading">Kesariya(From "Brahmas...</h5>
+                            <p class="home-subcard-paragraph">Pritam,Arjit Singh,Amitabh Bhattacharya</p>
+                        </div>
+                        <div class="home-card" onclick="display('sectionPasoori')">
+                            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/61/fd/ca/61fdca04-fd6b-0641-4482-904520ecb450/artwork.jpg/1200x1200bf-60.jpg" class="home-image" />
+                            <h5 class="home-subcard-heading">Pasoori</h5>
+                            <p class="home-subcard-paragraph">Shae Gill,Ali Sethi</p>
+                        </div>
+                        <div class="home-card" onclick="display('sectionMoosetape')">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" class="home-image" />
+                            <h5 class="home-subcard-heading">Moosetape</h5>
+                            <p class="home-subcard-paragraph">Sidhu Moose Wala</p>
+                        </div>
+                    </div>
+                    <h1 class="home-page-section-heading">Best of artists</h1>
+                    <div class="d-flex flex-row justify-content-start">
+                        <div class="home-card" onclick="display('sectionArjitSingh')">
+                            <img src="https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249" class="home-image" />
+                            <h5 class="home-subcard-heading">This Is Arjit Singh</h5>
+                            <p class="home-subcard-paragraph">The Bolltwood crooner's best songs.</p>
+                        </div>
+                        <div class="home-card" onclick="display('sectionPritam')">
+                            <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO0QBBOU-large.jpg" class="home-image" />
+                            <h5 class="home-subcard-heading">This Is Pritam</h5>
+                            <p class="home-subcard-paragraph">This is Pritam. The essential tracks,all in one playlist.</p>
+                        </div>
+                        <div class="home-card" onclick="display('sectionAtifAslam')">
+                            <img src="https://c.saavncdn.com/artists/Atif_Aslam_500x500.jpg" class="home-image" />
+                            <h5 class="home-subcard-heading">This Is Atif Aslam</h5>
+                            <p class="home-subcard-paragraph">This is Atif Aslam. The essential tracks,all in one playlist.</p>
+                        </div>
+                        <div class="home-card" onclick="display('sectionBearMcCreary')">
+                            <img src="https://i.scdn.co/image/ab6761610000e5eb26fbec11633db8b6cc8f78a8" class="home-image" />
+                            <h5 class="home-subcard-heading">This Is Bear McCreary</h5>
+                            <p class="home-subcard-paragraph">This is Bear McCreary.The essential tracks,all in one...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionLataMangeshkar">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/4afa02e54a259d5187b453e57d330788" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Music List</p>
+                    <h1 class="detail-podcast-speaker-name-heading">
+                        Lata Mangeshkar
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">Lata Mangeshkar Super Hit Song</p>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 32min</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/4afa02e54a259d5187b453e57d330788" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Hansta Hua Noorani Chehra...</h3>
+                <p class="detail-podcast-episodes-detail">Lata Mangeshkar,Kamal Barot...</p>
+                <p class="detail-podcast-episodes-time">3:44</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/4afa02e54a259d5187b453e57d330788" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Do Pal</h3>
+                <p class="detail-podcast-episodes-detail">Madan Mohan,Lata Mangeshkar...</p>
+                <p class="detail-podcast-episodes-time">4:26</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/4afa02e54a259d5187b453e57d330788" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Tere Chehra Se Nazar Nahin...</h3>
+                <p class="detail-podcast-episodes-detail">Lata Mangeshkar,Shabbir Kumar...</p>
+                <p class="detail-podcast-episodes-time">5:02</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/4afa02e54a259d5187b453e57d330788" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Zeehale Muskin</h3>
+                <p class="detail-podcast-episodes-detail">Lata Mangeshkar,Shabbir Kumar...</p>
+                <p class="detail-podcast-episodes-time">7:26</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/4afa02e54a259d5187b453e57d330788" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Aisa Des Hai Mera</h3>
+                <p class="detail-podcast-episodes-detail">Lata Mangeshkar,Madan Mohan...</p>
+                <p class="detail-podcast-episodes-time">7:07</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionBollywoodButter">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://i.scdn.co/image/ab67706f00000003fbeeccdab429f7c9632d7bcf" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Music List</p>
+                    <h1 class="detail-podcast-speaker-name-heading">
+                        Bollywood Butter
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">The finiest quality of bollywood music</p>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 25min</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000003fbeeccdab429f7c9632d7bcf" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Raataan Lambiyan...</h3>
+                <p class="detail-podcast-episodes-detail">Tanishk Bagchi,Jubin Nautiyal,...</p>
+                <p class="detail-podcast-episodes-time">3:50</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000003fbeeccdab429f7c9632d7bcf" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Sakhiyan 2.0</h3>
+                <p class="detail-podcast-episodes-detail">Maninder Buttar,Zahrah S Khan,...</p>
+                <p class="detail-podcast-episodes-time">2:58</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000003fbeeccdab429f7c9632d7bcf" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Ranjha</h3>
+                <p class="detail-podcast-episodes-detail">Jasleen Royal,B Praak,...</p>
+                <p class="detail-podcast-episodes-time">3:49</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000003fbeeccdab429f7c9632d7bcf" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Shayad</h3>
+                <p class="detail-podcast-episodes-detail">Pritam,Arijit Singh</p>
+                <p class="detail-podcast-episodes-time">4:08</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000003fbeeccdab429f7c9632d7bcf" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Mann Bharryaa 2.0</h3>
+                <p class="detail-podcast-episodes-detail">B Praak,Jaani</p>
+                <p class="detail-podcast-episodes-time">4:26</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionPunjabi101">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://i.scdn.co/image/ab67706f000000030226a9588a644f2d5afae525" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Music List</p>
+                    <h1 class="detail-podcast-speaker-name-heading">
+                        Punjabi 101
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">mate 101 punjabi hits with AP Dhillon</p>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 25min</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000030226a9588a644f2d5afae525" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Lalkara</h3>
+                <p class="detail-podcast-episodes-detail">Diljit Dosanjh,Intense Sultaan</p>
+                <p class="detail-podcast-episodes-time">2:41</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000030226a9588a644f2d5afae525" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Softly</h3>
+                <p class="detail-podcast-episodes-detail">Karen Aujla,Ikky</p>
+                <p class="detail-podcast-episodes-time">2:35</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000030226a9588a644f2d5afae525" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Calfornia Love</h3>
+                <p class="detail-podcast-episodes-detail">Cheema Y,Gur Sidhu</p>
+                <p class="detail-podcast-episodes-time">2:56</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000030226a9588a644f2d5afae525" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Mi Amor</h3>
+                <p class="detail-podcast-episodes-detail">Sharn,40k,The Paul</p>
+                <p class="detail-podcast-episodes-time">3:23</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000030226a9588a644f2d5afae525" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Jatt Vailly</h3>
+                <p class="detail-podcast-episodes-detail">Diljit Dosanjh,thiarajxtt</p>
+                <p class="detail-podcast-episodes-time">2:23</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionKollywoodCream">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://i.scdn.co/image/ab67706f00000002c66d367db59ad3918887e38f" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Music List</p>
+                    <h1 class="detail-podcast-speaker-name-heading">
+                        Kollywood Cream
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">Finest collection of Tamil Misic</p>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 25min</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000002c66d367db59ad3918887e38f" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Badass</h3>
+                <p class="detail-podcast-episodes-detail">Anirudh Ravichander</p>
+                <p class="detail-podcast-episodes-time">3:50</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000002c66d367db59ad3918887e38f" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Hukium-Thalaivar Alappara</h3>
+                <p class="detail-podcast-episodes-detail">Anirudh Ravichander,Super Su...</p>
+                <p class="detail-podcast-episodes-time">3:28</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000002c66d367db59ad3918887e38f" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Naa Ready</h3>
+                <p class="detail-podcast-episodes-detail">Anirudh Ravichander,Thalapat...</p>
+                <p class="detail-podcast-episodes-time">4:08</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000002c66d367db59ad3918887e38f" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Thee Thalapathy</h3>
+                <p class="detail-podcast-episodes-detail">Silambarasan TR,Thalapat....</p>
+                <p class="detail-podcast-episodes-time">:4:18</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000002c66d367db59ad3918887e38f" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Megham Karukatha</h3>
+                <p class="detail-podcast-episodes-detail">Dhanush,Anirudh Ravichander</p>
+                <p class="detail-podcast-episodes-time">4:50</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionNoLove">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://i.scdn.co/image/ab67616d0000b273955bb3adff01850fc1eb6a61" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Single</p>
+                    <h1 class="detail-podcast-speaker-name-heading pb-4">
+                        No Love
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">1 Song, 2:50</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d0000b273955bb3adff01850fc1eb6a61" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">No Love</h3>
+                <p class="detail-podcast-episodes-detail">Shubh</p>
+                <p class="detail-podcast-episodes-time">2:50</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionKesariya">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/9f/13/ca/9f13ca3b-e533-03e0-f19a-f0aaa774581d/196589311191.jpg/1200x1200bf-60.jpg" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Single</p>
+                    <h1 class="detail-podcast-speaker-name-heading pb-4">
+                        Kesariya
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">1 Song, 4:28</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/9f/13/ca/9f13ca3b-e533-03e0-f19a-f0aaa774581d/196589311191.jpg/1200x1200bf-60.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Kesariya</h3>
+                <p class="detail-podcast-episodes-detail">Pritam,Arijit Singh,Bhattacharya</p>
+                <p class="detail-podcast-episodes-time">4:28</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionPasoori">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/61/fd/ca/61fdca04-fd6b-0641-4482-904520ecb450/artwork.jpg/1200x1200bf-60.jpg" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Single</p>
+                    <h1 class="detail-podcast-speaker-name-heading pb-4">
+                        Pasoori
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">1 Song, 3:44</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/61/fd/ca/61fdca04-fd6b-0641-4482-904520ecb450/artwork.jpg/1200x1200bf-60.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Pasoori</h3>
+                <p class="detail-podcast-episodes-detail">Shae Gill,Ali Sethi</p>
+                <p class="detail-podcast-episodes-time">3:44</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionMoosetape">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Album</p>
+                    <h1 class="detail-podcast-speaker-name-heading">
+                        Moosetape
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">Sidhu Moose Wala</p>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 3:44</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Moosetape(Intro)</h3>
+                <p class="detail-podcast-episodes-detail">Sidhu Moose Wala</p>
+                <p class="detail-podcast-episodes-time">3:50</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Bitch I'm Back</h3>
+                <p class="detail-podcast-episodes-detail">Sidhu Moose Wala</p>
+                <p class="detail-podcast-episodes-time">3:23</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Burbarry</h3>
+                <p class="detail-podcast-episodes-detail">Sidhu Moose Wala</p>
+                <p class="detail-podcast-episodes-time">3:45</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">Racks and Rounds</h3>
+                <p class="detail-podcast-episodes-detail">Sidhu Moose Wala,Sikander Kahlon</p>
+                <p class="detail-podcast-episodes-time">3:45</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name">US</h3>
+                <p class="detail-podcast-episodes-detail">Sidhu Moose Wala,Raja Kumari</p>
+                <p class="detail-podcast-episodes-time">3:50</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionArjitSingh">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Album</p>
+                    <h1 class="detail-podcast-speaker-name-heading pb-4">
+                        This Is Arjit Singh
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 3:44</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Chaleya</h3>
+                <p class="detail-podcast-episodes-time">3:20</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Heeriye</h3>
+                <p class="detail-podcast-episodes-time">3:14</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">What Jhumka</h3>
+                <p class="detail-podcast-episodes-time">3:33</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Kesariya</h3>
+                <p class="detail-podcast-episodes-time">4:28</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Phi Aur Kya Chahiye</h3>
+                <p class="detail-podcast-episodes-time">4:26</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionPritam">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO0QBBOU-large.jpg" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Album</p>
+                    <h1 class="detail-podcast-speaker-name-heading pb-4">
+                        This Is Pritam
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 3:44</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO0QBBOU-large.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Tere Pyaar Mein</h3>
+                <p class="detail-podcast-episodes-detail">Pritam,Arijit Singh,...</p>
+                <p class="detail-podcast-episodes-time">4:26</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO0QBBOU-large.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">What Jhumka ?</h3>
+                <p class="detail-podcast-episodes-detail">Pritam,Arijit Singh,...</p>
+                <p class="detail-podcast-episodes-time">3:43</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO0QBBOU-large.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Ro Lain De</h3>
+                <p class="detail-podcast-episodes-detail">Pritam,Sonu Nigam,...</p>
+                <p class="detail-podcast-episodes-time">3:58</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO0QBBOU-large.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Ve Kamleya</h3>
+                <p class="detail-podcast-episodes-detail">Pritam,Arijit Singh,...</p>
+                <p class="detail-podcast-episodes-time">4:07</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO0QBBOU-large.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Tum Kya Mile</h3>
+                <p class="detail-podcast-episodes-detail">Pritam,Arijit Singh,...</p>
+                <p class="detail-podcast-episodes-time">4:38</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionAtifAslam">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://c.saavncdn.com/artists/Atif_Aslam_500x500.jpg" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Album</p>
+                    <h1 class="detail-podcast-speaker-name-heading pb-4">
+                        This Is Atif Aslam
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 3:44</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://c.saavncdn.com/artists/Atif_Aslam_500x500.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Dil Diyan Gallan</h3>
+                <p class="detail-podcast-episodes-detail">Visal-Shekhar,Atif Aslam,...</p>
+                <p class="detail-podcast-episodes-time">4:21</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://c.saavncdn.com/artists/Atif_Aslam_500x500.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">O Saathi</h3>
+                <p class="detail-podcast-episodes-detail">Atif Aslam,Arko</p>
+                <p class="detail-podcast-episodes-time">4:12</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://c.saavncdn.com/artists/Atif_Aslam_500x500.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Jeena Jeena</h3>
+                <p class="detail-podcast-episodes-detail">Atif Aslam</p>
+                <p class="detail-podcast-episodes-time">3:49</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://c.saavncdn.com/artists/Atif_Aslam_500x500.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Pehli Dafa</h3>
+                <p class="detail-podcast-episodes-detail">Atif Aslam,Shiraz Uppal</p>
+                <p class="detail-podcast-episodes-time">4:59</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://c.saavncdn.com/artists/Atif_Aslam_500x500.jpg" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Main Rang Sharbaton Ka</h3>
+                <p class="detail-podcast-episodes-detail">Pritam,Atif Aslam,...</p>
+                <p class="detail-podcast-episodes-time">2:27</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+    <div id="sectionBearMcCreary">
+        <div class="detail-podcast-top-card">
+            <div class="d-flex flex-row ">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb26fbec11633db8b6cc8f78a8" class="detail-Puri-Jagannadh-Page-image" />
+                <div class="detail-top-subcard">
+                    <p class="detail-podcast-speaker-name-paragraph">Artist</p>
+                    <h1 class="detail-podcast-speaker-name-heading pb-4">
+                        This Is Bear Mc Creary
+                    </h1>
+                    <p class="detail-podcast-speaker-name-paragraph">5 Song, 3:44</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb26fbec11633db8b6cc8f78a8" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Blood Upon the Snow</h3>
+                <p class="detail-podcast-episodes-time">4:31</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb26fbec11633db8b6cc8f78a8" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Outlander-The Skye Boat...</h3>
+                <p class="detail-podcast-episodes-time">2:04</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb26fbec11633db8b6cc8f78a8" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">God of War Ragnarok</h3>
+                <p class="detail-podcast-episodes-time">4:34</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb26fbec11633db8b6cc8f78a8" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">Dance of the Drulds</h3>
+                <p class="detail-podcast-episodes-time">4:38</p>
+            </div>
+        </div>
+        <div class="detail-page-episodes-list d-flex flex-row">
+            <div>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb26fbec11633db8b6cc8f78a8" class="detail-Puri-Jagannadh-Page-image" />
+            </div>
+            <div class="detail-page-episodes-sublist">
+                <h3 class="detail-podcast-episodes-name pb-3">God of War</h3>
+                <p class="detail-podcast-episodes-time">4:06</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end" onclick="display('sectionhome')"><button class="back-button">Back</button></div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
