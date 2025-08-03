@@ -791,6 +791,19 @@
     </div>
 
     <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script>
+        function display(sectionId) {
+            const sections = document.querySelectorAll("div[id^='section']");
+            sections.forEach(section => {
+                section.style.display = "none";
+            });
+            document.getElementById(sectionId).style.display = "block";
+        }
+
+        window.onload = function() {
+            display('sectioncoverpage');
+        };
+    </script>
 </body>
 
 </html>
